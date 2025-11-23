@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Homepage - StudierWeise</title>
+
+  
+  <style>
+    
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #e9deff, #bae6fd);
+      color: #222;
+    }
+
+    
+    .page {
+      max-width: 1100px;
+      margin: 28px auto;
+      padding: 18px;
+    }
+
+    
+    .banner {
+      background: linear-gradient(90deg, rgba(255,255,255,0.85), rgba(255,255,255,0.65));
+      border-radius: 28px;
+      padding: 14px 20px;
+      text-align: center;
+      font-weight: 700;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      border: 2px solid rgba(0,0,0,0.06);
+    }
+
+    
+    .grid {
+      display: flex;
+      gap: 26px;
+      margin-top: 20px;
+      align-items: flex-start;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+      margin-bottom: 18px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.1rem;
+      background: rgba(200,200,200,0.18);
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 12px;
+    }
+
+    .youtuber {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .youtuber img {
+      width: 68px;
+      height: 68px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    }
+    .youtuber .meta a { font-weight: 700; color: #1a57a2; text-decoration: none; }
+    .youtuber .meta { font-size: 0.95rem; }
+
+    
+    .devs li { margin: 6px 0; list-style: none; }
+
+    
+    @media (max-width: 720px) {
+      .grid { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="banner">
+      Welcome! Let's improve your study habits today!
+    </div>
+
+    <div class="grid">
+      
+      <div class="col">
+        <div class="card">
+          <h3>The art of studying</h3>
+          <p style="text-align: justify;">Effective studying is not about studying longer but studying smarter. It involves learning what works best for you and using strategies that work to help you learn better.</p>
+        </div>
+
+        <div class="card">
+          <h3>Overview</h3>
+          <ul>
+            <li><a href="#study-tips">Study Techniques</a></li>
+            <li><a href="time management.html">Time Management Tips</a></li>
+            <li><a href="#research">Click here to view our Research</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>About the Developers</h3>
+          <ul class="devs">
+            <li>Jenielhou D. Manggol</li>
+            <li>Jennifer B. Flandez</li>
+          </ul>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card">
+          <h3>Recommended Study YouTubers</h3>
+            
+          <div class="youtuber">
+            <img src="fayefilms.jpg" alt="Faye">
+            <div class="meta">
+              <a href="https://youtube.com/@fayefilms?si=8ym48-n-g2BAZa_J">FayeFilms</a><br>
+              Uploads Study Tips and Study With Me Videos
+            </div>
+          </div>
+          
+            
+          <div class="youtuber">
+            <img src="gohar.jpg" alt="Gohar" >
+            <div class="meta">
+              <a href="https://youtube.com/@goharsguide?si=A1E0aM33yNufBQW1">Gohar Khan</a><br>
+              Uploads Study Tips Videos
+            </div>
+           </div>
+           
+           
+            <div class="youtuber">
+            <img src="simple.jpg" alt="Simpletivity">
+            <div class="meta">
+              <a href="https://youtube.com/@simpletivity?si=ZOrKjlSG6c6XajnA">Simpletivity</a><br>
+              A time management coach who provides quick and simple tips
+            </div>
+           </div>
+           
+            
+            <div class="youtuber">
+            <img src="amy.jpg" alt="Amy">
+            <div class="meta">
+              <a href="https://youtube.com/@amytv?si=dXsY1gs8hf3CwYln">Amy Landino</a><br>
+              she create videos that go beyond time management topics 
+            </div>
+          </div>
+    </div>
+   </body>
+</html>
