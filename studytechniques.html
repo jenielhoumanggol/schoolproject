@@ -5,13 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Techniques</title>
 <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         background: linear-gradient(135deg, #e9d5ff, #bae6fd);
         font-family: "Segoe UI", Roboto, Arial;
         color: #1f2937;
         text-align: justify; 
+        margin: 0;
     }   
 
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 18px 0;
+        background-color: #a2bbee;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        text-align: center; 
+    }
+
+    .nav-inner {
+        background: white;
+        padding: 10px 25px;
+        border-radius: 12px;
+        display: inline-block; 
+    }
+
+    nav a {
+        color: #6b3fb3;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 6px 10px;
+        margin: 0 10px;  
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #e5e0fa;
+        color: #1f2937;
+    }
+
+    
+    
     table {
         background: rgba(255, 255, 255, 0.6)
         backdrop-filter: blur(4px);
@@ -54,18 +97,34 @@
     <br>
     <br>
     <br>
+    <br>
+    <nav>
+        <div class="nav-inner">
+            <a href="https://jenielhoumanggol.github.io/schoolproject/homepage.html">Home</a>
+            <a href="https://jenielhoumanggol.github.io/schoolproject/timemanagementtechniques.html">Time Management Techniques</a>
+
+            <a href="#memory-dependent-subjects">Memory Dependent Subjects</a>
+            <a href="#problem-solving-subjects">Problem Solving Subjects</a>
+            <a href="#interpretation-based-subjects">Interpretation Based Subjects</a>
+        </div>
+    </nav>
+
+    <br>
+    <br>
     <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
     <div style="background-color: white; padding:10px; border-radius:10px;">
-    <h1>Study Techniques</h1>
+        <h1>Study Techniques</h1>
     </div>
     </form>
     <br>
     <br>
+    
 
-    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%;border-radius:12px;">
+    <section id="memory-dependent-subjects">
+    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
     <div style="background-color: white; padding:10px; border-radius:10px;">
-    <h2>Memory Dependent Subjects</h2>
-        <p>For subjects that require a lot of memorization, such as history or biology, consider using the following study techniques to reinforce your memory.</p>
+        <h2>Memory Dependent Subjects</h2>
+            <p>For subjects that require a lot of memorization, such as history or biology, consider using the following study techniques to reinforce your memory.</p>
     <table>
         <tr>
             <th>Technique</th>
@@ -114,9 +173,11 @@
     </table>
     </div>
     </form>
+    </section>
     <br>
     <br>
 
+    <section id="problem-solving-subjects">
     <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
     <div style="background-color: white; padding:10px; border-radius:10px;">
     <h2>Problem Solving Subjects</h2>
@@ -141,12 +202,14 @@
     </table>
     </div>
     </form>
+    </section>
     <br>
     <br>
 
+
+    <section id="interpretation-based-subjects">
     <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
     <div style="background-color: white; padding:10px; border-radius:10px;">
-    <h2>Interpretation Based Subjects</h2>
         <p>For subjects that require interpretation and critical thinking, such as literature or social studies, consider these study techniques to deepen your understanding.</p>
     <table>
         <tr>
@@ -168,6 +231,7 @@
     </table>
     </div>
     </form>
+    </section>
     <br>
     <br>
     <br>
