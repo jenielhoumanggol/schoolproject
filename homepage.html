@@ -3,167 +3,230 @@
 <head>
   <meta charset="utf-8" />
   <title>Homepage - StudierWeise</title>
-
-  
   <style>
-    
-    html, body {
-      height: 100%;
-      margin: 0;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(135deg, #e9deff, #bae6fd);
-      color: #222;
+    body {
+        background: linear-gradient(135deg, #e9d5ff, #bae6fd);
+        font-family: "Segoe UI", Roboto, Arial;
+        color: #1f2937;
+        text-align: justify; 
+    }   
+
+     nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        padding: 18px 0;
+        background-color: #a2bbee;
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        text-align: center; 
     }
 
-    
-    .page {
-      max-width: 1100px;
-      margin: 28px auto;
-      padding: 18px;
+    .nav-inner {
+        background: white;
+        padding: 10px 25px;
+        border-radius: 12px;
+        display: inline-block; 
     }
 
-    
-    .banner {
-      background: linear-gradient(90deg, rgba(255,255,255,0.85), rgba(255,255,255,0.65));
-      border-radius: 28px;
-      padding: 14px 20px;
-      text-align: center;
-      font-weight: 700;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-      border: 2px solid rgba(0,0,0,0.06);
+    nav a {
+        color: #6b3fb3;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 6px 10px;
+        margin: 0 10px;  
+        border-radius: 6px;
+        transition: 0.3s;
     }
 
-    
-    .grid {
-      display: flex;
-      gap: 26px;
-      margin-top: 20px;
-      align-items: flex-start;
+    nav a:hover {
+        background-color: #e5e0fa;
+        color: #1f2937;
     }
 
-    .col {
-      flex: 1;
-      min-width: 280px;
-    }
 
-    
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      padding: 16px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
-      margin-bottom: 18px;
-      border: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .card h3 {
+    h1{
       margin: 0 0 10px 0;
-      font-size: 1.1rem;
-      background: rgba(200,200,200,0.18);
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 12px;
+      color: #6b3fb3;
     }
 
-    .youtuber {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-    .youtuber img {
-      width: 68px;
-      height: 68px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.08);
-    }
-    .youtuber .meta a { font-weight: 700; color: #1a57a2; text-decoration: none; }
-    .youtuber .meta { font-size: 0.95rem; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
 
-    
-    .devs li { margin: 6px 0; list-style: none; }
+   
+   
+.youtuber {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
 
-    
-    @media (max-width: 720px) {
-      .grid { flex-direction: column; }
-    }
+.youtuber img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  margin-bottom: 10px;
+}
+
+.youtuber .meta {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.youtuber .meta a {
+  font-weight: 700;
+  color: #1a57a2;
+  text-decoration: none;
+}
+
+
+
+.dev {
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.dev img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
   </style>
 </head>
+
+
 <body>
-  <div class="page">
-
-    <div class="banner">
-      Welcome! Let's improve your study habits today!
+<center>
+  <br>
+  <br>
+  <br>
+  <br>
+   <nav>
+      <div class="nav-inner">
+          <a href=#article1>The Art of Studying</a>
+          <a href=#overview>Overview</a>
+          <a href=#youtubers>Recommended Study YouTubers</a>
+          <a href=#developers>About the Developers</a>
+       </div>
+    </nav>
+  <br>
+  <br>
+ 
+    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
+    <div style="background-color: white; padding:10px; border-radius:10px;">
+    <h1>StudierWeise</h1>
+    <p>Welcome! Let's improve your study habits today!</p>
     </div>
+    </form>
+    <br>
+    <br>
 
-    <div class="grid">
-      
-      <div class="col">
-        <div class="card">
-          <h3>The art of studying</h3>
-          <p style="text-align: justify;">Effective studying is not about studying longer but studying smarter. It involves learning what works best for you and using strategies that work to help you learn better.</p>
-        </div>
+    <section id="article1">
+    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
+    <div style="background-color: white; padding:10px; border-radius:10px;">
+      <h1>The Art of Studying</h1>
+      <p style="text-align: justify;">
+        Effective studying is not about studying longer but studying smarter.
+        It involves learning what works best for you and using strategies
+        that help you learn better.
+      </p>
+    </div>
+    </form>
+    </section>
+    <br>
+    <br>
 
-        <div class="card">
-          <h3>Overview</h3>
-          <ul>
-            <li><a href="https://jenielhoumanggol.github.io/schoolproject/studytechniques.html">Study Techniques</a></li>
-            <li><a href="https://jenielhoumanggol.github.io/schoolproject/timemanagementtechniques.html">Time Management Tips</a></li>
-            <li><a href="#research">Click here to view our Research</a></li>
-          </ul>
-        </div>
+    <section id="overview">
+    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
+    <div style="background-color: white; padding:10px; border-radius:10px;">
+      <h1>Overview</h1>
+      <ul>
+        <li><a href="https://jenielhoumanggol.github.io/schoolproject/studytechniques.html">Study Techniques</a></li>
+        <li><a href="https://jenielhoumanggol.github.io/schoolproject/timemanagementtechniques.html">Time Management Tips</a></li>
+        <li><a href="#research">Click here to view our Research</a></li>
+      </ul>
+    </div>
+    </form>
+    </section>
+    <br>
+    <br>
 
-        <div class="card">
-          <h3>About the Developers</h3>
-          <ul class="devs">
-            <li>Jenielhou D. Manggol</li>
-            <li>Jennifer B. Flandez</li>
-          </ul>
+    <section id="youtubers">
+    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
+    <div style="background-color: white; padding:10px; border-radius:10px;">
+      <h1>Recommended Study YouTubers</h1>
+
+      <div class="youtuber">
+        <img src="fayefilms.jpg" alt="Faye">
+        <div class="meta">
+          <a href="https://youtube.com/@fayefilms">FayeFilms</a><br>
+          Study Tips & Study With Me
         </div>
       </div>
 
-      
-      <div class="col">
-        <div class="card">
-          <h3>Recommended Study YouTubers</h3>
-            
-          <div class="youtuber">
-            <img src="fayefilms.jpg" alt="Faye">
-            <div class="meta">
-              <a href="https://youtube.com/@fayefilms?si=8ym48-n-g2BAZa_J">FayeFilms</a><br>
-              Uploads Study Tips and Study With Me Videos
-            </div>
-          </div>
-          
-            
-          <div class="youtuber">
-            <img src="gohar.jpg" alt="Gohar" >
-            <div class="meta">
-              <a href="https://youtube.com/@goharsguide?si=A1E0aM33yNufBQW1">Gohar Khan</a><br>
-              Uploads Study Tips Videos
-            </div>
-           </div>
-           
-           
-            <div class="youtuber">
-            <img src="simple.jpg" alt="Simpletivity">
-            <div class="meta">
-              <a href="https://youtube.com/@simpletivity?si=ZOrKjlSG6c6XajnA">Simpletivity</a><br>
-              A time management coach who provides quick and simple tips
-            </div>
-           </div>
-           
-            
-            <div class="youtuber">
-            <img src="amy.jpg" alt="Amy">
-            <div class="meta">
-              <a href="https://youtube.com/@amytv?si=dXsY1gs8hf3CwYln">Amy Landino</a><br>
-              she create videos that go beyond time management topics 
-            </div>
-          </div>
-    </div>
-   </body>
+      <div class="youtuber">
+        <img src="gohar.jpg" alt="Gohar">
+        <div class="meta">
+          <a href="https://youtube.com/@goharsguide">Gohar Khan</a><br>
+          Study Tips Videos
+        </div>
+      </div>
 
+      <div class="youtuber">
+        <img src="simple.jpg" alt="Simpletivity">
+        <div class="meta">
+          <a href="https://youtube.com/@simpletivity">Simpletivity</a><br>
+          Time Management Tips
+        </div>
+      </div>
+
+      <div class="youtuber">
+        <img src="amy.jpg" alt="Amy">
+        <div class="meta">
+          <a href="https://youtube.com/@amytv">Amy Landino</a><br>
+          Productivity & Lifestyle Tips
+        </div>
+      </div>
+
+    </div>
+    </form>
+    </section>
+    <br>
+    <br>
+
+    <section id="developers">
+    <form action=" " style="background-color:#a2bbee; padding:10px; width:100%; border-radius:12px;">
+    <div style="background-color: white; padding:10px; border-radius:10px;">
+    <div class="card">
+      <h1>About the Developers</h1>
+      <div class="dev">
+        <img src="dev1.jpg" alt="Jenielhou">
+        <div><b>Jenielhou D. Manggol</b><br>Developer</div>
+      </div>
+
+      <div class="dev">
+        <img src="dev2.jpg" alt="Jennifer">
+        <div><b>Jennifer B. Flandez</b><br>Developer</div>
+      </div>
+
+    </div>
+    </div>
+    </form>
+    </section>
+
+  </div>
+  </center>
+</body>
 </html>
